@@ -1,0 +1,313 @@
+<!DOCTYPE html> <html><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Java's Internet Café</title>
+        <style>
+            :root {
+                --gutter-x: 1.5rem;
+                --gutter-y: 1.5rem;
+
+                --java-yellow: 252, 197, 15;
+                --java-primary: 60, 49, 47;
+            }
+
+            .gutter_padding {
+                padding-left: var(--gutter-x) !important;
+                padding-right: var(--gutter-y) !important;
+            }
+
+            .header_content {
+                background-color: rgba(var(--java-primary), 0.86);
+
+            }
+
+            .btn:focus {
+                box-shadow: 0 0 0 2pt rgba(var(--java-primary), 0.4);
+            }
+        </style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* General */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: .5rem 0;
+}
+
+.java_header {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_content {
+    color: #fff;
+    padding: 5rem;
+}
+
+.java_mission {
+    background-color: #ffe89a;
+    padding: 2rem;
+}
+
+.java_page {
+    padding: 1rem 0;
+}
+
+/* Java Navigation */
+
+.java_navigationTool {
+    background: #3c312f;
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+.java_navigationTool ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.java_navigationTool ul>li>a {
+    display: block;
+    padding: 1rem;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: .15em solid transparent;
+}
+
+.java_navigationTool ul>li>a.active {
+    background-color: #302327;
+    border-bottom: solid #fcc50f;
+}
+
+.java_footer	{
+    padding: .5rem;
+	background: #f3d190;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    background: #302327;
+    color: #fff;
+    padding: .75rem;
+    border-radius: .5rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+span._ripple {
+    position: absolute;
+    /* The absolute position we mentioned earlier */
+    border-radius: 50%;
+    transform: scale(0);
+    padding: 0.5rem;
+    animation: ripple 0.6s ease forwards;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes ripple {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(2.75);
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes navbar {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #0356fc;
+    }
+}</style></head>
+    <body>
+        <header class="java_header" style="background: url(https://www.theprospectordaily.com/wp-content/uploads/2017/01/CyberCafe-900x600.jpg);">
+            <div class="header_content gutter_padding">
+                <h1>Java's Internet Café</h1>
+                <h3>North Grand's Coffee Shop + Internet Café + Restaurant</h3>
+            </div>
+        </header>
+        <main>
+            <article java="navigationTool">
+                <nav class="java_navigationTool">
+                    <ul>
+                        <li><a href="#mission" class="ripple">Mission</a></li>
+                        <li><a href="#menu" class="ripple active">Menu</a></li>
+                        <li><a href="#faqs" class="ripple">FAQs</a></li>
+                        <li><a href="#fees" class="ripple">Fees</a></li>
+                    </ul>
+                </nav>
+
+                <section id="mission" class="java_mission gutter_padding">
+                    <h2>Our Mission</h2>
+                    <p>Our main mission resides on providing North Grand's Culinary students jobs to work as baristas and chefs. In addition, we hope in proving the community an internet cafe to research, play games, print papers, and so on.*</p>
+                    <small>*Small fees apply if you are not a student (PreK-12). For more information, check our <a href="#fees">fees page.</a></small>
+                </section>
+
+                <section class="gutter_padding java_page" id="menu" page="menu">
+                    <h2>Menu</h2>
+
+                    <h3>Our Coffee Brews</h3>
+                    <ul>
+                        <li>Iced</li>
+                        <li>Espressso</li>
+                        <li>Cocoa</li>
+                        <li>Marochinno</li>
+                    </ul>
+
+                    <h3>Today's Special(s)</h3>
+                    <ul>
+                        <li>Churros</li>
+                    </ul>
+
+                    <h3>Breakfast</h3>
+                    <ul>
+                        <li>
+                            Bagels
+                            <ul>
+                                <li>Grilled Cheese</li>
+                                <li>Eggs, bacon, and cheese</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Lunch</h3>
+                    <ul>
+                        <li>Grilled Cheese</li>
+                        <li>Omelettes</li>
+                        <li>Eggs (Scrambled / Sunny Side)</li>
+                        <li>Pasta</li>
+                    </ul>
+
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Cinnamon Buns</li>
+                        <li>
+                            Cookies
+                            <ul>
+                                <li>Chocolate Chip</li>
+                                <li>Peanut Butter</li>
+                                <li>Shortbread</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Brownies
+                            <ul>
+                                <li>Chocolate</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Want to order online?</p>
+                    <button class="btn ripple">Order Here</button>
+                </section>
+
+                <section class="gutter_padding java_page" id="faqs" page="faqs">
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>If you aren't from North Grand, do you pay, even if you're a student?</h3>
+                    <p>There is no fees for students. However, <strong>college students must pay as they're not preK-12</strong>. Sorry!</p>
+                </section>
+
+                <section class="gutter_padding java_page" id="fees" page="fees">
+                    <h2>Usage Fees</h2>
+                </section>
+
+                <footer class="java_footer gutter_padding">
+                    © 2022 Java's Internet Cafe
+                </footer>
+            </article>
+        </main>
+    
+<script>
+/*__POPCODESTART__*/
+var Java = function () {
+  var _this = this;
+
+  var ripple = function ripple(e) {
+    var button = e.currentTarget;
+    button.dim = button.getBoundingClientRect();
+    var circle = document.createElement("span");
+    var diameter = Math.max(button.clientWidth, button.clientHeight);
+    var radius = diameter / 2;
+    var x = "".concat(e.clientX - button.dim.left - radius, "px");
+    var y = "".concat(e.clientY - button.dim.top - radius, "px");
+
+    if (e.clientX === 0 && e.clientY === 0) {
+      x = "".concat(button.dim.width / 2 - radius, "px");
+      y = "".concat(button.dim.height / 2 - radius, "px");
+    }
+
+    circle.style.width = circle.style.height = "".concat(diameter, "px");
+    circle.style.left = x;
+    circle.style.top = y;
+    circle.classList.add("_ripple");
+    var _ripple = button.getElementsByClassName("_ripple")[0];
+
+    if (_ripple) {
+      _ripple.remove();
+    }
+
+    button.appendChild(circle);
+  };
+
+  var buttons = document.querySelectorAll(".ripple");
+  buttons.forEach(function (button) {
+    button.addEventListener("click", ripple);
+  });
+
+  var navigationTool = function navigationTool(e) {
+    _this.active_el = e.querySelector("ul li a.active");
+    _this.links = e.querySelectorAll("ul li a");
+
+    _this.links.forEach(function (link) {
+      link.onclick = function (el) {
+        _this.links.forEach(function (links) {
+          links.classList.remove("active");
+        });
+
+        link.classList.add("active");
+      };
+    });
+  };
+
+  return {
+    navigationTool: navigationTool
+  };
+}();
+
+var JavaElements = document.querySelectorAll("*[java]");
+JavaElements.forEach(function (e) {
+  var ts = "new Java.".concat(e.getAttribute("java"), "(e)");
+  var t = eval(ts);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIkphdmEiLCJyaXBwbGUiLCJlIiwiYnV0dG9uIiwiY3VycmVudFRhcmdldCIsImRpbSIsImdldEJvdW5kaW5nQ2xpZW50UmVjdCIsImNpcmNsZSIsImRvY3VtZW50IiwiY3JlYXRlRWxlbWVudCIsImRpYW1ldGVyIiwiTWF0aCIsIm1heCIsImNsaWVudFdpZHRoIiwiY2xpZW50SGVpZ2h0IiwicmFkaXVzIiwieCIsImNsaWVudFgiLCJsZWZ0IiwieSIsImNsaWVudFkiLCJ0b3AiLCJ3aWR0aCIsImhlaWdodCIsInN0eWxlIiwiY2xhc3NMaXN0IiwiYWRkIiwiX3JpcHBsZSIsImdldEVsZW1lbnRzQnlDbGFzc05hbWUiLCJyZW1vdmUiLCJhcHBlbmRDaGlsZCIsImJ1dHRvbnMiLCJxdWVyeVNlbGVjdG9yQWxsIiwiZm9yRWFjaCIsImFkZEV2ZW50TGlzdGVuZXIiLCJuYXZpZ2F0aW9uVG9vbCIsImFjdGl2ZV9lbCIsInF1ZXJ5U2VsZWN0b3IiLCJsaW5rcyIsImxpbmsiLCJvbmNsaWNrIiwiZWwiLCJKYXZhRWxlbWVudHMiLCJ0cyIsImdldEF0dHJpYnV0ZSIsInQiLCJldmFsIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxJQUFJLEdBQUksWUFBVztBQUFBOztBQUNuQixNQUFJQyxNQUFNLEdBQUcsU0FBVEEsTUFBUyxDQUFDQyxDQUFELEVBQU87QUFDaEIsUUFBTUMsTUFBTSxHQUFHRCxDQUFDLENBQUNFLGFBQWpCO0FBQ0FELElBQUFBLE1BQU0sQ0FBQ0UsR0FBUCxHQUFhRixNQUFNLENBQUNHLHFCQUFQLEVBQWI7QUFDQSxRQUFNQyxNQUFNLEdBQUdDLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixNQUF2QixDQUFmO0FBQ0EsUUFBTUMsUUFBUSxHQUFHQyxJQUFJLENBQUNDLEdBQUwsQ0FBU1QsTUFBTSxDQUFDVSxXQUFoQixFQUE2QlYsTUFBTSxDQUFDVyxZQUFwQyxDQUFqQjtBQUNBLFFBQU1DLE1BQU0s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QWYsUUFBTjtBQUNBLE1BQUlDLENBQUMsR0FBR0MsSUFBSSxDQUFDSCxFQUFELENBQVo7QUFDSCxDQUhEIiwic291cmNlc0NvbnRlbnQiOlsibGV0IEphdmEgPSAoZnVuY3Rpb24oKSB7XG4gICAgbGV0IHJpcHBsZSA9IChlKSA9PiB7XG4gICAgICAgIGNvbnN0IGJ1dHRvbiA9IGUuY3VycmVudFRhcmdldDtcbiAgICAgICAgYnV0dG9uLmRpbSA9IGJ1dHRvbi5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKTtcbiAgICAgICAgY29uc3QgY2lyY2xlID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcInNwYW5cIik7XG4gICAgICAgIGNvbnN0IGRpYW1ldGVyID0gTWF0aC5tYXgoYnV0dG9uLmNsaWVudFdpZHRoLCBidXR0b24uY2xpZW50SGVpZ2h0KTtcbiAgICAgICAgY29uc3QgcmFkaXVzID0gZGlhbWV0ZXIgLyAyO1xuXG4gICAgICAgIGxldCB4ID0gYCR7ZS5jbGllbnRYIC0gYnV0dG9uLmRpbS5sZWZ0IC0gcmFkaXVzfXB4YDtcbiAgICAgICAgbGV0IHkgPSBgJHtlLmNsaWVudFkgLSBidXR0b24uZGltLnRvcCAtIHJhZGl1c31weGA7XG5cbiAgICAgICAgaWYgKGUuY2xpZW50WCA9PT0gMCAmJiBlLmNsaWVudFkgPT09IDApIHtcbiAgICAgICAgICAgIHggPSBgJHtidXR0b24uZGltLndpZHRoIC8gMiAtIHJhZGl1c31weGA7XG4gICAgICAgICAgICB5ID0gYCR7YnV0dG9uLmRpbS5oZWlnaHQgLyAyIC0gcmFkaXVzfXB4YDtcbiAgICAgICAgfVxuXG4gICAgICAgIGNpcmNsZS5zdHlsZS53aWR0aCA9IGNpcmNsZS5zdHlsZS5oZWlnaHQgPSBgJHtkaWFtZXRlcn1weGA7XG4gICAgICAgIGNpcmNsZS5zdHlsZS5sZWZ0ID0geDtcbiAgICAgICAgY2lyY2xlLnN0eWxlLnRvcCA9IHk7XG4gICAgICAgIGNpcmNsZS5jbGFzc0xpc3QuYWRkKFwiX3JpcHBsZVwiKTtcblxuICAgICAgICBjb25zdCBfcmlwcGxlID0gYnV0dG9uLmdldEVsZW1lbnRzQnlDbGFzc05hbWUoXCJfcmlwcGxlXCIpWzBdO1xuXG4gICAgICAgIGlmIChfcmlwcGxlKSB7XG4gICAgICAgICAgICBfcmlwcGxlLnJlbW92ZSgpO1xuICAgICAgICB9XG5cbiAgICAgICAgYnV0dG9uLmFwcGVuZENoaWxkKGNpcmNsZSk7XG4gICAgfTtcblxuICAgIGxldCBidXR0b25zID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yaXBwbGVcIik7XG4gICAgYnV0dG9ucy5mb3JFYWNoKChidXR0b24pID0+IHtcbiAgICAgICAgYnV0dG9uLmFkZEV2ZW50TGlzdGVuZXIoXCJjbGlja1wiLCByaXBwbGUpO1xuICAgIH0pO1xuXG4gICAgbGV0IG5hdmlnYXRpb25Ub29sID0gKGUpID0+IHtcbiAgICAgICAgdGhpcy5hY3RpdmVfZWwgPSBlLnF1ZXJ5U2VsZWN0b3IoXCJ1bCBsaSBhLmFjdGl2ZVwiKTtcbiAgICAgICAgdGhpcy5saW5rcyA9IGUucXVlcnlTZWxlY3RvckFsbChcInVsIGxpIGFcIik7XG4gICAgICAgIHRoaXMubGlua3MuZm9yRWFjaCgobGluaykgPT4ge1xuICAgICAgICAgICAgbGluay5vbmNsaWNrID0gKGVsKSA9PiB7XG4gICAgICAgICAgICAgICAgdGhpcy5saW5rcy5mb3JFYWNoKChsaW5rcykgPT4ge1xuICAgICAgICAgICAgICAgICAgICBsaW5rcy5jbGFzc0xpc3QucmVtb3ZlKFwiYWN0aXZlXCIpO1xuICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgICAgIGxpbmsuY2xhc3NMaXN0LmFkZChcImFjdGl2ZVwiKTtcbiAgICAgICAgICAgIH07XG4gICAgICAgIH0pO1xuICAgIH07XG5cbiAgICByZXR1cm4ge1xuICAgICAgICBuYXZpZ2F0aW9uVG9vbFxuICAgIH07XG59KSgpO1xuXG5sZXQgSmF2YUVsZW1lbnRzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIipbamF2YV1cIik7XG5cbkphdmFFbGVtZW50cy5mb3JFYWNoKChlKSA9PiB7XG4gICAgbGV0IHRzID0gYG5ldyBKYXZhLiR7ZS5nZXRBdHRyaWJ1dGUoXCJqYXZhXCIpfShlKWA7XG4gICAgbGV0IHQgPSBldmFsKHRzKTtcbn0pOyJdfQ==</script></body></html>
