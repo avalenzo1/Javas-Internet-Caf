@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Java's Internet Café</title>
+        <style>
+            :root {
+                --gutter-x: 1.5rem;
+                --gutter-y: 1.5rem;
+
+                --java-yellow: 252, 197, 15;
+                --java-primary: 60, 49, 47;
+            }
+
+            .gutter_padding {
+                padding-left: var(--gutter-x) !important;
+                padding-right: var(--gutter-y) !important;
+            }
+
+            .header_content {
+                background-color: rgba(var(--java-primary), 0.86);
+
+            }
+
+            .btn:focus {
+                box-shadow: 0 0 0 2pt rgba(var(--java-primary), 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="java_header" style="background: url(https://www.theprospectordaily.com/wp-content/uploads/2017/01/CyberCafe-900x600.jpg);">
+            <div class="header_content gutter_padding">
+                <h1>Java's Internet Café</h1>
+                <h3>North Grand's Coffee Shop + Internet Café + Restaurant</h3>
+            </div>
+        </header>
+        <main>
+            <article java="navigationTool">
+                <nav class="java_navigationTool">
+                    <ul>
+                        <li><a href="#mission" class="ripple">Mission</a></li>
+                        <li><a href="#menu" class="ripple active">Menu</a></li>
+                        <li><a href="#faqs" class="ripple">FAQs</a></li>
+                        <li><a href="#fees" class="ripple">Fees</a></li>
+                    </ul>
+                </nav>
+
+                <section id="mission" class="java_mission gutter_padding">
+                    <h2>Our Mission</h2>
+                    <p>Our main mission resides on providing North Grand's Culinary students jobs to work as baristas and chefs. In addition, we hope in proving the community an internet cafe to research, play games, print papers, and so on.*</p>
+                    <small>*Small fees apply if you are not a student (PreK-12). For more information, check our <a href="#fees">fees page.</a></small>
+                </section>
+
+                <section class="gutter_padding java_page" id="menu" page="menu">
+                    <h2>Menu</h2>
+
+                    <h3>Our Coffee Brews</h3>
+                    <ul>
+                        <li>Iced</li>
+                        <li>Espressso</li>
+                        <li>Cocoa</li>
+                        <li>Marochinno</li>
+                    </ul>
+
+                    <h3>Today's Special(s)</h3>
+                    <ul>
+                        <li>Churros</li>
+                    </ul>
+
+                    <h3>Breakfast</h3>
+                    <ul>
+                        <li>
+                            Bagels
+                            <ul>
+                                <li>Grilled Cheese</li>
+                                <li>Eggs, bacon, and cheese</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Lunch</h3>
+                    <ul>
+                        <li>Grilled Cheese</li>
+                        <li>Omelettes</li>
+                        <li>Eggs (Scrambled / Sunny Side)</li>
+                        <li>Pasta</li>
+                    </ul>
+
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Cinnamon Buns</li>
+                        <li>
+                            Cookies
+                            <ul>
+                                <li>Chocolate Chip</li>
+                                <li>Peanut Butter</li>
+                                <li>Shortbread</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Brownies
+                            <ul>
+                                <li>Chocolate</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Want to order online?</p>
+                    <button class="btn ripple">Order Here</button>
+                </section>
+
+                <section class="gutter_padding java_page" id="faqs" page="faqs">
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>If you aren't from North Grand, do you pay, even if you're a student?</h3>
+                    <p>There is no fees for students. However, <strong>college students must pay as they're not preK-12</strong>. Sorry!</p>
+                </section>
+
+                <section class="gutter_padding java_page" id="fees" page="fees">
+                    <h2>Usage Fees</h2>
+                </section>
+
+                <footer class="java_footer gutter_padding">
+                    &copy; 2022 Java's Internet Cafe
+                </footer>
+            </article>
+        </main>
+    </body>
+</html>
